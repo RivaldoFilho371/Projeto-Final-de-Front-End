@@ -1,0 +1,86 @@
+
+/* Configurações gerais */
+body {
+    margin: 0;
+    background-color: #101510;
+    color: #eeeeee;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #080b08;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #39b86b;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    color: #39b86b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+/* Conteúdo */
+main {
+    padding: 25px;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+section:first-child {
+    background-color: #191f19;
+    padding: 25px;
+}
+
+/* Jogos */
+article {
+    display: inline-block;
+    background-color: #191f19;
+    padding: 15px;
+    margin: 10px;
+    width: 180px;
+    vertical-align: top;
+}
+
+article figure {
+    margin: 0;
+}
+
+article img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+article h3 {
+    color: #39b86b;
+}
+
+article h5 {
+    margin: 8px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #080b08;
+    color: #aaaaaa;
+    text-align: center;
+    padding: 20px;
+}
