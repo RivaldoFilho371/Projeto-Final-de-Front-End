@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    background-color: #101510;
+    color: #eeeeee;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #080b08;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 20;
+}
+
+header h1 {
+    color: #39b86b;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    color: #39b86b;
+    text-decoration: none;
+    font: inherit;
+}
+
+a:hover, a.active {
+    padding: 10px;
+    background-color: #092915;
+    color: #ffffff;
+}
+
+
+main {
+    padding: 25px;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+section:first-child {
+    background-color: #191f19;
+    padding: 25px;
+}
+
+/* Jogos */
+article {
+    display: inline-block;
+    background-color: #191f19;
+    padding: 15px;
+    margin: 10px;
+    width: 180px;
+    vertical-align: top;
+}
+
+article figure {
+    margin: 0;
+}
+
+article img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+article h3 {
+    color: #39b86b;
+}
+
+article h5 {
+    margin: 8px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #080b08;
+    color: #aaaaaa;
+    text-align: center;
+    padding: 20px;
+}
+
+button, .btn {
+    padding: 10px;
+    background-color: #17502e;
+    color: white;
+}
+
+button.secondary, .btn.secondary {
+    padding: 10px;
+    background-color: #3a3838;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #39b86b;
+    color: #080b08;
+}
+
+.btn.secondary:hover {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+.genero {
+    background-color: #191f19;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border-left: 4px solid #39b86b;
+    max-width: 500px;
+}
+
+.genero h2 {
+    color: #39b86b;
+    margin-top: 0;
+}
+
+.atalho-resenha {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    padding: 8px;
+    background-color: #080b08;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.atalho-resenha img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    display: block;
+}
+
+.atalho-resenha span {
+    position: absolute;
+    right: 65px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #191f19;
+    color: #39b86b;
+    padding: 10px 15px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+}
+
+.atalho-resenha:hover span,
+.atalho-resenha:focus-visible span {
+    opacity: 1;
+    visibility: visible;
+}

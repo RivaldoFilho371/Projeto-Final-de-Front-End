@@ -1,0 +1,130 @@
+
+/* Configurações gerais */
+body {
+    margin: 0;
+    background-color: #101510;
+    color: #eeeeee;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #080b08;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+header h1 {
+    color: #39b86b;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    color: #39b86b;
+    text-decoration: none;
+    font: inherit;
+}
+
+a:hover, a.active {
+    padding: 10px;
+    background-color: #191f19;
+    color: #ffffff;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 25px;
+}
+
+main h1 {
+    color: #39b86b;
+}
+
+main div {
+    background-color: #191f19;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+caption {
+    color: #39b86b;
+    padding: 15px;
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #303a30;
+}
+
+thead {
+    background-color: #39b86b;
+    color: #080b08;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #202820;
+}
+
+tbody tr:hover {
+    background-color: #293b2e;
+}
+
+footer {
+    background-color: #080b08;
+    color: #aaaaaa;
+    text-align: center;
+    padding: 20px;
+}
+
+.atalho-resenha {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    padding: 8px;
+    background-color: #080b08;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.atalho-resenha img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    display: block;
+}
+
+.atalho-resenha span {
+    position: absolute;
+    right: 65px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #191f19;
+    color: #39b86b;
+    padding: 10px 15px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s;
+}
+
+.atalho-resenha:hover span,
+.atalho-resenha:focus-visible span {
+    opacity: 1;
+    visibility: visible;
+}

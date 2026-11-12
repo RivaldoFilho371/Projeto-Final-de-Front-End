@@ -8,7 +8,8 @@
     <meta name="author" content="Rivaldo Filho">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <title>Início | Gamescore</title>
+    <link rel="stylesheet" href="../CSS/admin.css">
+    <title>Administração | CriticalGaming</title>
 </head>
 
 <body>
@@ -33,30 +34,31 @@
     <main>
 
         <h1>Painel de administração</h1>
+        <fieldset>
+            <div>
+                <h3>Cadastrar jogo</h3>
 
-        <div>
-            <fieldset><h3>Cadastrar jogo</h3>
+                <p>
+                    <label for="nome">Nome do jogo:</label>
+                    <input type="text" placeholder="Nome" id="nome">
+                </p>
 
-            <p>
-                <label for="nome">Nome do jogo:</label>
-                <input type="text" placeholder="Nome" id="nome">
-            </p>
+                <p>
+                    <label for="genero">Gênero:</label>
+                    <input type="text" placeholder="Gênero" id="genero">
+                </p>
 
-            <p>
-                <label for="genero">Gênero:</label>
-                <input type="text" placeholder="Gênero" id="genero">
-            </p>
+                <p>
+                    <label for="ano">Ano de Lançamento:</label>
+                    <input type="text" placeholder="2026" id="ano">
+                </p>
 
-            <p>
-                <label for="ano">Ano de Lançamento:</label>
-                <input type="text" placeholder="2026" id="ano">
-            </p>
-
-            <p>
-                <label for="nota">Nota:</label>
-                <input type="text" placeholder="0 a 10" id="nota">
-            </p>
-        </div></fieldset>
+                <p>
+                    <label for="nota">Nota:</label>
+                    <input type="text" placeholder="0 a 10" id="nota">
+                </p>
+            </div>
+        </fieldset>
 
         <div>
             <h3>Jogos Cadastrados</h3>
@@ -103,6 +105,10 @@
             </table>
         </div>
 
+        <a href="escrever-resenha.html" class="atalho-resenha">
+            <img src="../Fotos/pena-verde.png" alt="Escrever resenha">
+            <span>Escrever resenha</span>
+        </a>
 
     </main>
 
