@@ -33,7 +33,35 @@
     <main>
 
     </main>
+    <h1>Escreva sua resenha</h1>
 
+    <div>
+        <p>
+            <input list="lista-jogos" placeholder="Selecione o jogo">
+            <datalist id="lista-jogos">
+                <option value="Minecraft">
+                <option value="Delver">
+                <option value="Barony">
+                <option value="The Elder Scrolls: Arena">
+            </datalist>
+        </p>
+
+        <p>
+            <label for="nota">Nota</label>
+            <input type="number" min="0" max="10" id="nota">
+        </p>
+        <p>
+            <label for="titulo">Título da resenha</label>
+            <input type="text" id="titulo">
+        </p>
+
+        <p>
+            <label for="resenha">Resenha</label>
+            <textarea id="resenha"></textarea>
+        </p>
+
+        <button>Publicar</button>
+    </div>
     <footer>
         &copy; 2026 Critical Gaming - O acerto crítico na indústria gamer
     </footer>
