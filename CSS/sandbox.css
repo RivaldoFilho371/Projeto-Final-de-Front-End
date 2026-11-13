@@ -103,16 +103,6 @@ article h3 a {
     z-index: 100;
 }
 
-.atalho-resenha {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    padding: 8px;
-    background-color: #080b08;
-    border-radius: 50%;
-    z-index: 100;
-}
-
 .atalho-resenha img {
     width: 45px;
     height: 45px;
